@@ -7,10 +7,10 @@ import java.util.Set;
 
 public interface UsuarioDao {
 
-    boolean salvar(Usuario usuario);
-    Usuario buscarPorCpf(String cpf);
-    boolean deletarPorCpf(String cpf);
-    boolean atualizar(Usuario usuario);
+    boolean salvar(Usuario usuario) throws IOException, ClassNotFoundException;
+    Usuario buscarPorLogin(String login) throws IOException, ClassNotFoundException;
+    boolean deletarPorLogin(String login) throws IOException, ClassNotFoundException;
+    boolean atualizar(Usuario usuario) throws IOException, ClassNotFoundException;
     Set<Usuario> getUsuarios() throws IOException, ClassNotFoundException;
 
 }

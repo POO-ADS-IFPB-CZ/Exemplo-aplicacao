@@ -18,6 +18,10 @@ public class Usuario implements Serializable {
     public Usuario() {
     }
 
+    public Usuario(String login) {
+        this.login = login;
+    }
+
     public Usuario(String nome, LocalDate nascimento, char sexo, Cargo cargo, String login, String senha) {
         this.nome = nome;
         this.nascimento = nascimento;
