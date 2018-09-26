@@ -71,10 +71,6 @@ public class Usuario implements Serializable {
         this.login = login;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
     public void setSenha(String senha) {
         this.senha = senha;
     }
@@ -103,4 +99,9 @@ public class Usuario implements Serializable {
     public int hashCode() {
         return Objects.hash(getLogin());
     }
+
+    public boolean autenticar(String login, String senha){
+        return login.equals(this.login) && senha.equals(this.senha);
+    }
+
 }

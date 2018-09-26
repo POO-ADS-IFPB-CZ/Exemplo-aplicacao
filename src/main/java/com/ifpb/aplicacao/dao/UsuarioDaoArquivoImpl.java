@@ -16,7 +16,6 @@ public class UsuarioDaoArquivoImpl implements UsuarioDao {
         if(!file.exists()){
             file.createNewFile();
         }
-
     }
 
     @Override
