@@ -6,7 +6,6 @@ import com.ifpb.aplicacao.enumeration.Cargo;
 import com.ifpb.aplicacao.model.Usuario;
 
 import javax.swing.*;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import javax.swing.text.MaskFormatter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

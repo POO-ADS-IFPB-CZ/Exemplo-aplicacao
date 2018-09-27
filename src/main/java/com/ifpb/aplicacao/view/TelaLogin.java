@@ -15,7 +15,6 @@ public class TelaLogin extends JFrame {
 
     private JPanel contentPane;
     private JButton buttonOK;
-    private JButton buttonCancel;
     private JTextField textField1;
     private JPasswordField passwordField1;
     private JButton criarContaButton;
@@ -55,8 +54,13 @@ public class TelaLogin extends JFrame {
 
                 if(usuario!=null){
                     if(usuario.autenticar(login, senha)){
-                        JOptionPane.showMessageDialog(null,
-                                "Autenticado");
+
+                        TelaPrincipal principal = new TelaPrincipal();
+                        principal.pack();
+                        dispose();
+                        principal.setVisible(true);
+                        System.exit(0);
+
                     }else{
                         JOptionPane.showMessageDialog(null,
                                 "Senha incorreta",
